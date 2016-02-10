@@ -76,3 +76,6 @@ echo "export PHPBREW_ROOT=/opt/phpbrew
 export PHPBREW_HOME=/opt/phpbrew
 [[ -e /opt/phpbrew/bashrc ]] && source /opt/phpbrew/bashrc
 " > /etc/profile.d/phpbrew.sh
+
+# After all packages were installed, change the APT mirror to default:
+sed -i 's/http:\/\/mirror\.rackspace\.com\/ubuntu/http:\/\/de.archive.ubuntu.com\/ubuntu/g' /etc/apt/sources.list
