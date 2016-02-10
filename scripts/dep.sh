@@ -14,7 +14,7 @@ apt-get -y install language-pack-de
 
 apt-get -y install postfix mailutils
 
-apt-get -y install vim-nox mc screen htop curl wget rsync
+apt-get -y install vim-nox mc screen htop curl wget rsync dos2unix
 
 apt-get -y install openssh-client openssh-sftp-server
 
