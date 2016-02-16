@@ -66,9 +66,9 @@ gem install mailcatcher --no-ri --no-rdoc
 curl -L -O https://github.com/phpbrew/phpbrew/raw/master/phpbrew
 chmod +x phpbrew
 mv phpbrew /usr/local/bin/
-phpbrew init
 export PHPBREW_ROOT=/opt/phpbrew
 export PHPBREW_HOME=/opt/phpbrew
+phpbrew init
 source /opt/phpbrew/bashrc
 phpbrew install 5.6 +default+fpm+mysql+gd+soap+opcache
 phpbrew install 7.0 +default+fpm+mysql+gd+soap+opcache
