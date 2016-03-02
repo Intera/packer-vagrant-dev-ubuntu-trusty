@@ -46,6 +46,9 @@ apt-get install -y libicu-dev
 apt-get install -y libmhash-dev libmhash2
 apt-get install -y libmcrypt-dev libmcrypt4
 
+# Cleanup obsolete packages.
+apt-get autoremove --purge -y -q
+
 # Install nodejs
 curl -sL https://deb.nodesource.com/setup_4.x | bash -
 apt-get install -y nodejs
